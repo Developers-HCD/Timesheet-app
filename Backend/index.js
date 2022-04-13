@@ -10,8 +10,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }));
   
-  
- 
+   
 app.get('/testdata', (req, res, next) => {
     console.log("TEST endpoint :");    
     res.send("funciona")
